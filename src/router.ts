@@ -1,6 +1,17 @@
 import {Router} from 'express'
+import { body, validationResult } from "express-validator";
 
 const router = Router()
+
+
+// app.post("/product", body("name"), (req, res) => {
+//     const errors = validationResult(req);
+  
+//     if (!errors.isEmpty()) {
+//       res.status(400);
+//       res.json({ errors: errors.array() });
+//     }
+//   });
 
 /**
  * Product
